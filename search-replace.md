@@ -20,9 +20,14 @@
 - **Chercher :** `((\d)\s*%)`
 - **Remplacer :** `$2<THSP>%`
 
-## Séparateur des milliers (nombre)
+## Nombre : séparateur des milliers
 
 _Remarque : la règle englobe les dates et ne fonctionne pas pour les nombres qui ont déjà une espace normale comme séparateur des millers._
 
 - **Chercher :** `\d{1,3}(?=(\d{3})+(?!\d))`
 - **Remplacer :** `$&<NBSP>`
+
+## Nombre avec décimale : virgule au lieu du point
+
+- **Chercher :** `(\d)\.(\d)`
+- **Remplacer :** `$1,$2`
