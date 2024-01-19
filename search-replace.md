@@ -10,6 +10,13 @@
 - **Chercher :** `\.{3,}`
 - **Remplacer :** `…`
 
+## Écriture inclusive : remplacer le point bas par un point médian
+
+_Source : https://www.facebook.com/proficiografik/posts/2706180696148193/_
+
+- **Chercher :** `[a-z]\K\.(?=[a-z])`
+- **Remplacer :** `·`
+
 ## Espace devant une double ponctuation en espace fine
 
 - **Chercher :** `(\s(!|\?|:|;))`
